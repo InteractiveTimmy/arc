@@ -2,23 +2,13 @@
 
 ## Description
 
-Arc is an application engine designed to streamline game development in JavaScript.
-
-## Requirements
-
-ToDo.
-
-## Installation
-
-ToDo.
-
-## Usage
-
-ToDo.
+This file contains a guide for contributors to follow when opening pull requests.
 
 ## Guidelines
 
-This `README.md` file will contain a collection of details that help define a the project and its requirements.
+This `CONTRIBUTING.md` file will contain a collection of details that help define the project root structure and its requirements.
+
+For details on creating a new package, please review the `README.md` file located in [template package](package/template) directory.
 
 ### Common Structure
 
@@ -47,7 +37,7 @@ The local `package.json` file should contain the following template structure:
 
 ```json
 {
-  "name": "@{repository}",
+  "name": "{repository}",
   "version": "{semantic-version}",
   "description": "{short-repository-description}",
   "license": "{license}",

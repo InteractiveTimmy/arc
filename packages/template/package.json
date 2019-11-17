@@ -1,0 +1,36 @@
+{
+  "name": "@arc/{package}",
+  "version": "{semantic-version}",
+  "description": "{short-package-description}",
+  "main": "./build/{build-file}",
+  "license": "MIT",
+  "homepage": "https://github.com/interactivetimmy/arc/tree/master/packages/{package}/#readme",
+  "repository": "https://github.com/interactivetimmy/arc/packages/{package}",
+  "bugs": "https://github.com/interactivetimmy/arc/issues",
+  "contributors": [
+    "InteractiveTimmy",
+    "{contributor}"
+  ],
+  "entries": {
+    "build": "./build/{file-path}",
+    "dist": "./build/{file-path}",
+    "src": "./src/{file-path}"
+  },
+  "scripts": {
+    "test": "{test call}",
+    "compile": "{compile call}",
+    "transpile": "{transpile call}",
+    "lint": "{lint call}",
+    "docs": "{doc build call}",
+    "samples": "{samples run call}"
+  },
+  "dependencies": {
+    "{dependency}": "{dependency-version}"
+  },
+  "devDependencies": {
+    "{dependency}": "{dependency-version}"
+  },
+  "{optional-config}": {
+    "{key}": "{value}"
+  }
+}

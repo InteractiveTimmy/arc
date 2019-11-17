@@ -1,24 +1,8 @@
-# Arc
-
-## Description
-
-Arc is an application engine designed to streamline game development in JavaScript.
-
-## Requirements
-
-ToDo.
-
-## Installation
-
-ToDo.
-
-## Usage
-
-ToDo.
+# Template Package
 
 ## Guidelines
 
-This `README.md` file will contain a collection of details that help define a the project and its requirements.
+This `README.md` file will contain a collection of details that help define a package and its requirements.
 
 ### Common Structure
 
@@ -31,13 +15,17 @@ This `README.md` file will contain a collection of details that help define a th
 
 The following folder structure is required for each plugin to create persistent script handling.
 
-- `config/` - Contains general project configuration files.
-- `packages/` - Contains consumable build files.
-  - `{package}` - Contains a package and its files and folders.
-- `scripts/` - Contains a collection of pure JS scripts to be executed by `npm`.
-  - `commands/` - Contains all commands listed in the `package.json` file.
-  - `utils/` - Contains general utilities for scripts.
-  - `index.js` - Contains the entry file for scripts.
+- `build/` - Contains consumable build files.
+- `dist/` - Contains consumable source files.
+- `docs/` - Contains built documentation from source files.
+  - `core/` - Contains core files and folders.
+    - `{index}` - Contains imports/exports for folder.
+  - `{plugin}/` - Contains grouped plugin files and folders.
+    - `{index}` - Contains imports/exports for folder.
+  - `{entry-file}` - Contains entry file for package.
+- `samples/` - Contains a collection of sample files and folders.
+- `src/` - Contains package source files.
+- `test/` - Contains testing suite files and folders.
 
 ### Package File
 
@@ -47,18 +35,21 @@ The local `package.json` file should contain the following template structure:
 
 ```json
 {
-  "name": "@{repository}",
+  "name": "@{repository}/{package}",
   "version": "{semantic-version}",
-  "description": "{short-repository-description}",
+  "description": "{short-package-description}",
+  "main": "./build/{build-file}",
   "license": "{license}",
-  "homepage": "https://github.com/{user|org}/{repository}/#readme",
-  "repository": "https://github.com/{user|org}/{repository}",
+  "homepage": "https://github.com/{user|org}/{repository}/tree/master/packages/{package}/#readme",
+  "repository": "https://github.com/{user|org}/{repository}/packages/{package}",
   "bugs": "https://github.com/{user|org}/{repository}/issues",
   "contributors": [
     "{contributor}"
   ],
-  "packages": {
-    "{package}": "./packages/{package}/"
+  "entries": {
+    "build": "./build/{file-path}",
+    "dist": "./build/{file-path}",
+    "src": "./src/{file-path}"
   },
   "scripts": {
     "test": "{test call}",
