@@ -1,0 +1,26 @@
+{
+  "name": "@arc/sdk",
+  "version": "0.0.0",
+  "description": "Arc SDK package",
+  "main": "./build/sdk.js",
+  "license": "MIT",
+  "homepage": "https://github.com/interactivetimmy/arc/tree/master/packages/sdk/#readme",
+  "repository": "https://github.com/interactivetimmy/arc/packages/sdk",
+  "bugs": "https://github.com/interactivetimmy/arc/issues",
+  "contributors": [
+    "InteractiveTimmy"
+  ],
+  "entries": {
+    "build": "./build/sdk.js",
+    "dist": "./build/index.js",
+    "src": "./src/index.js"
+  },
+  "scripts": {
+    "compile": "echo \"Error: no compile script defined\" && exit 1",
+    "docs": "echo \"Error: no compile script defined\" && exit 1",
+    "lint": "echo \"Error: no compile script defined\" && exit 1",
+    "samples": "echo \"Error: no compile script defined\" && exit 1",
+    "test": "echo \"Error: no compile script defined\" && exit 1",
+    "transpile": "echo \"Error: no compile script defined\" && exit 1"
+  }
+}
