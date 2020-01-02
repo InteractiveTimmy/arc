@@ -1,3 +1,6 @@
+# OS data
+*.DS_Store
+
 # Build data
 build/
 dist/
