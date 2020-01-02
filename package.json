@@ -13,12 +13,21 @@
     "sdk": "./packages/sdk/"
   },
   "scripts": {
+    "clean": "echo \"Error: no compile script defined\" && exit 1",
     "compile": "echo \"Error: no compile script defined\" && exit 1",
     "docs": "echo \"Error: no compile script defined\" && exit 1",
     "lint": "echo \"Error: no compile script defined\" && exit 1",
     "samples": "echo \"Error: no compile script defined\" && exit 1",
     "test": "echo \"Error: no compile script defined\" && exit 1",
-    "transpile": "echo \"Error: no compile script defined\" && exit 1"
+    "transpile": "echo \"Error: no compile script defined\" && exit 1",
+    "sdk:build": "cd ./packages/sdk && npm run clean && npm run transpile && npm run compile",
+    "sdk:clean": "cd ./packages/sdk && npm run clean",
+    "sdk:compile": "cd ./packages/sdk && npm run compile",
+    "sdk:docs": "cd ./packages/sdk && npm run docs",
+    "sdk:lint": "cd ./packages/sdk && npm run lint",
+    "sdk:samples": "cd ./packages/sdk && npm run samples",
+    "sdk:test": "cd ./packages/sdk && npm run test",
+    "sdk:transpile": "cd ./packages/sdk && npm run transpile"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
