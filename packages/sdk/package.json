@@ -16,11 +16,15 @@
     "src": "./src/index.js"
   },
   "scripts": {
-    "compile": "echo \"Error: no compile script defined\" && exit 1",
+    "build": "npm run clean && npm run transpile && npm run compile",
+    "clean": "rimraf ./build ./dist ./docs",
+    "compile": "rollup -c ./rollup.config.js -n SDK -o ./build/sdk.js",
     "docs": "echo \"Error: no compile script defined\" && exit 1",
-    "lint": "echo \"Error: no compile script defined\" && exit 1",
+    "lint": "eslint ./src/** ./test/**",
+    "lint:src": "eslint ./src/**",
+    "lint:test": "eslint ./test/**",
     "samples": "echo \"Error: no compile script defined\" && exit 1",
-    "test": "echo \"Error: no compile script defined\" && exit 1",
-    "transpile": "echo \"Error: no compile script defined\" && exit 1"
+    "test": "jest",
+    "transpile": "tsc"
   }
 }
