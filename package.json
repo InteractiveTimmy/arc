@@ -20,7 +20,7 @@
     "samples": "echo \"Error: no compile script defined\" && exit 1",
     "test": "echo \"Error: no compile script defined\" && exit 1",
     "transpile": "echo \"Error: no compile script defined\" && exit 1",
-    "sdk:build": "cd ./packages/sdk && npm run clean && npm run transpile && npm run compile",
+    "sdk:build": "cd ./packages/sdk && npm run build",
     "sdk:clean": "cd ./packages/sdk && npm run clean",
     "sdk:compile": "cd ./packages/sdk && npm run compile",
     "sdk:docs": "cd ./packages/sdk && npm run docs",
