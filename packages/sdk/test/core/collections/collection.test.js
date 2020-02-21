@@ -1,7 +1,7 @@
 import Collection from '../../../dist/core/collections/collection';
 import ArcObject from '../../../dist/core/models/arc-object';
 
-describe('core/utils/collection', () => {
+describe('core/collections/collection', () => {
   describe('integration', () => {
     let collection;
     let superior;
