@@ -8,6 +8,11 @@ import { uuid } from '../utils/index';
  */
 export default abstract class ArcObject {
   /**
+   * The type of this {@link ArcObject}.
+   */
+  public readonly type: string;
+
+  /**
    * The unique identifier for this {@link ArcObject}.
    */
   public readonly uuid: string;
@@ -16,6 +21,7 @@ export default abstract class ArcObject {
    * Generate a new {@link ArcObject}.
    */
   public constructor() {
+    this.type = this.constructor.name;
     this.uuid = uuid();
   }
 }
