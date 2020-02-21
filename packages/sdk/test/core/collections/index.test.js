@@ -7,5 +7,11 @@ describe('core/collections/index', () => {
 
       expect(collections.Collection).toBeDefined();
     });
+
+    it('should export List', () => {
+      expect.assertions(1);
+
+      expect(collections.List).toBeDefined();
+    });
   });
 });
