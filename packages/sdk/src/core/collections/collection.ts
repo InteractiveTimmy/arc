@@ -1,7 +1,7 @@
 import { ArcObject } from '../models/index';
 
 /**
- * Abstract Collection Class
+ * Abstract Collection Class.
  *
  * Provides the framework for consumable collection classes to utilize when
  * managing a group of {@link ArcObject}s.
