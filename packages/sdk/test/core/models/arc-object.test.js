@@ -16,6 +16,14 @@ describe('core/utils/arc-object', () => {
           expect(arcObject.uuid).toBeDefined();
         });
       });
+
+      describe('#type', () => {
+        it('should be a string', () => {
+          expect.assertions(1);
+
+          expect(typeof arcObject.type).toBe('string');
+        })
+      })
     });
   });
 });
