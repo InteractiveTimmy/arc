@@ -10,6 +10,13 @@
   "contributors": [
     "InteractiveTimmy"
   ],
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env"
+      ]
+    ]
+  },
   "entries": {
     "build": "./build/sdk.js",
     "dist": "./build/index.js",
