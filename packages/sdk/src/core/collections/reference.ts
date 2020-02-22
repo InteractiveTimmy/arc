@@ -25,8 +25,8 @@ export default class Reference<Item extends ArcObject> extends Collection {
    *
    * @param superior - The arc object this collection belongs to.
    */
-  public constructor(superior: Item, index: keyof ArcObject) {
-    super(superior);
+  public constructor(index: keyof ArcObject) {
+    super();
 
     this.index = index;
     this.items = {};
