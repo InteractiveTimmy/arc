@@ -5,11 +5,9 @@ describe('core/collections/reference', () => {
   describe('integration', () => {
     let index;
     let reference;
-    let superior;
     let subordinates;
 
     beforeEach(() => {
-      superior = new ArcObject();
       subordinates = [
         new ArcObject(),
         new ArcObject(),
@@ -17,7 +15,7 @@ describe('core/collections/reference', () => {
       ];
 
       index = 'uuid';
-      reference = new Reference(superior, index);
+      reference = new Reference(index);
     });
 
     describe('property members', () => {

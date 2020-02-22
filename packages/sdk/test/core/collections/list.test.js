@@ -4,18 +4,16 @@ import ArcObject from '../../../dist/core/models/arc-object';
 describe('core/collections/list', () => {
   describe('integration', () => {
     let list;
-    let superior;
     let subordinates;
 
     beforeEach(() => {
-      superior = new ArcObject();
       subordinates = [
         new ArcObject(),
         new ArcObject(),
         new ArcObject(),
       ];
 
-      list = new List(superior);
+      list = new List();
     });
 
     describe('property members', () => {
