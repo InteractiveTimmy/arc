@@ -22,8 +22,8 @@ describe('core/utils/arc-object', () => {
           expect.assertions(1);
 
           expect(typeof arcObject.type).toBe('string');
-        })
-      })
+        });
+      });
     });
   });
 });
