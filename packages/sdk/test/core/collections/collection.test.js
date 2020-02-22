@@ -4,28 +4,16 @@ import ArcObject from '../../../dist/core/models/arc-object';
 describe('core/collections/collection', () => {
   describe('integration', () => {
     let collection;
-    let superior;
     let subordinates;
 
     beforeEach(() => {
-      superior = new ArcObject();
       subordinates = [
         new ArcObject(),
         new ArcObject(),
         new ArcObject(),
       ];
 
-      collection = new Collection(superior);
-    });
-
-    describe('property members', () => {
-      describe('#superior', () => {
-        it('should be the provided superior parameter', () => {
-          expect.assertions(1);
-
-          expect(collection.superior).toBe(superior);
-        });
-      });
+      collection = new Collection();
     });
 
     describe('method members', () => {
