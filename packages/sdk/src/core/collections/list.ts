@@ -20,8 +20,8 @@ export default class List<Item extends ArcObject> extends Collection {
    *
    * @param superior - The arc object this collection belongs to.
    */
-  public constructor(superior: Item) {
-    super(superior);
+  public constructor() {
+    super();
 
     this.items = [];
   }

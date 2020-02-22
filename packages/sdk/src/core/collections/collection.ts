@@ -8,20 +8,6 @@ import { ArcObject } from '../models/index';
  */
 export default abstract class Collection {
   /**
-   * The {@link ArcObject} that this collection belongs to.
-   */
-  protected readonly superior: ArcObject;
-
-  /**
-   * Generate a new {@link Collection}.
-   *
-   * @param superior - The arc object this collection belongs to.
-   */
-  public constructor(superior: ArcObject) {
-    this.superior = superior;
-  }
-
-  /**
    * Determine if an {@link ArcObject} can be loaded into this collection.
    *
    * @param item - The {@link ArcObject} to validate if it can be loaded.
